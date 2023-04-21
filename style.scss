@@ -1,3 +1,6 @@
+@import './animation.scss';
+
+
 :root {
     --primary: #fea323;
     --secondary: #171717;
@@ -15,6 +18,7 @@
 
 section {
     height: 100vh;
+    font-family: 'Pathway Extreme';
     .block-calculator {
         color: #fff;
         display: flex;
@@ -32,6 +36,18 @@ section {
             background-color: var(--primary);
             z-index: -1;
             border-radius: 66px 66px 0 0;
+            
+        }
+        &::after {
+            content: "Calculator";
+            font-size: 4rem;
+            position: absolute;
+            top: 0;
+            color: var(--primary);
+            z-index: -1;
+            font-family: 'Dancing Script';
+            -webkit-animation: text-shadow-pop-top 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: text-shadow-pop-top 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         }
         &__int {
             width: 237px;
@@ -42,6 +58,8 @@ section {
             box-shadow: 0px 4px 5px 3px #0000007d;
             display: flex;
             flex-direction: column;
+            -webkit-animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
             &-top {
                 font-size: 9px;
                 display: flex;
@@ -128,6 +146,7 @@ section {
                             align-items: center;
                             border-radius: 12px;
                             box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4901960784);
+                            transition: all 5s ease;
                             &:first-child,
                             &:nth-child(2),
                             &:nth-child(3) {
