@@ -152,7 +152,7 @@ section .block-calculator__int-main-top_result {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 52px;
+  font-size: 42px;
 }
 section .block-calculator__int-main-content_int {
   display: flex;
@@ -176,10 +176,13 @@ section .block-calculator__int-main-content_int .item {
 section .block-calculator__int-main-content_int .item:first-child, section .block-calculator__int-main-content_int .item:nth-child(2), section .block-calculator__int-main-content_int .item:nth-child(3) {
   background-color: var(--tertiary);
 }
-section .block-calculator__int-main-content_int .item:nth-child(4), section .block-calculator__int-main-content_int .item:nth-child(8), section .block-calculator__int-main-content_int .item:nth-child(12), section .block-calculator__int-main-content_int .item:nth-child(16) {
+section .block-calculator__int-main-content_int .item:nth-child(4), section .block-calculator__int-main-content_int .item:nth-child(8), section .block-calculator__int-main-content_int .item:nth-child(12), section .block-calculator__int-main-content_int .item:nth-child(16), section .block-calculator__int-main-content_int .item:nth-child(20) {
   background-color: var(--primary);
 }
 section .block-calculator__int-main-content_int .item:hover {
   box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, 0.4901960784);
   cursor: pointer;
+}
+section .block-calculator__int-main-content_int .item span {
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
