@@ -115,6 +115,15 @@ section .block-calculator__int-top::before {
   z-index: 1;
   border-radius: 0 0 66px 66px;
 }
+section .block-calculator__int-top-network-group .cloche {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 18px;
+}
+section .block-calculator__int-top-network-group .cloche:hover {
+  transform: rotate(20deg);
+}
 section .block-calculator__int-between {
   color: #605c5b;
   line-height: 1.5;
@@ -154,6 +163,15 @@ section .block-calculator__int-main-top_result {
   align-items: center;
   font-size: 42px;
 }
+section .block-calculator__int-main-top_result .value-result {
+  font-size: 42px;
+  width: 100%;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Pathway Extreme";
+}
 section .block-calculator__int-main-content_int {
   display: flex;
   flex-flow: wrap;
@@ -172,6 +190,10 @@ section .block-calculator__int-main-content_int .item {
   border-radius: 12px;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4901960784);
   transition: all 5s ease;
+  border: 0;
+  color: #fff;
+  font-family: "Pathway Extreme";
+  font-size: 1rem;
 }
 section .block-calculator__int-main-content_int .item:first-child, section .block-calculator__int-main-content_int .item:nth-child(2), section .block-calculator__int-main-content_int .item:nth-child(3) {
   background-color: var(--tertiary);
